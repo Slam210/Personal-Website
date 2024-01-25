@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #F5F5DC;
+  font-family:'Times New Roman, Calibri, Helvetica';
+}
+
+.container {
+  margin: 1rem;
+  text-align: center;
+}
