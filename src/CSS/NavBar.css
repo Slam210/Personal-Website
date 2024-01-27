@@ -30,11 +30,9 @@
     padding: .25rem;
   }
   
-  .navBar a:hover {
-    background-color: #555;
-  }
   .navBar li.active {
     background-color: #777;
+    transition: background-color 1s ease;
   }
 
   .sticky {
