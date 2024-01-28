@@ -1,0 +1,26 @@
+.ProjectsBody {
+    font-size: large;
+}
+
+.image-gallery {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ReactModal__Overlay {
+    z-index: 100; /* Adjust the z-index as needed */
+  }
+  
+  .ReactModal__Content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    max-width: 70%; /* Adjust the max-width as needed */
+    max-height: auto; /* Adjust the max-height as needed */
+    margin: auto;
+  }

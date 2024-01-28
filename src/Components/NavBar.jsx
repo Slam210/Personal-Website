@@ -37,8 +37,8 @@ export default function NavBar() {
       <Link to="/" className="HomePage"> Home Page</Link>
       <ul>
         <CustomLink to="/AboutMe">About Me</CustomLink>
-        <CustomLink to="/Resume">Resume</CustomLink>
         <CustomLink to="/Projects">Projects</CustomLink>
+        <CustomLink to="/Resume">Resume</CustomLink>
       </ul>
     </nav>
   );
