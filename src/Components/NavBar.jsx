@@ -34,7 +34,7 @@ export default function NavBar() {
 
   return (
     <nav className={`navBar ${isSticky ? 'sticky' : ''}`}>
-      <Link to="/Personal-Website" className="HomePage"> Home Page</Link>
+      <Link to="/PersonalWebsite" className="HomePage"> Home Page</Link>
       <ul>
         <CustomLink to="/AboutMe">About Me</CustomLink>
         <CustomLink to="/Projects">Projects</CustomLink>
