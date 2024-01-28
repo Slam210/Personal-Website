@@ -12,7 +12,7 @@ export default function App() {
         <NavBar />
         <div className = "container">
           <Routes>
-            <Route path="/" element={<HomePage />}/>
+            <Route path="/PersonalWebsite" element={<HomePage />}/>
             <Route path="/AboutMe" element={<AboutMe />}/>
             <Route path="/Resume" element={<Resume />}/>
             <Route path="/Projects" element={<Projects />}/>
