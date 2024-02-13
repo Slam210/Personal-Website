@@ -28,7 +28,7 @@ export default function Resume() {
             <h2 className = "Title">TECHNICAL PROFICIENCIES</h2>
             <div>
                 <ul>
-                    <li><b>Programming Languages and Technologies:</b> C++, Flutter, Dart, Firebase, Oracle SQL, HTML, CSS, JavaScript, Pig Latin, Java, LaTeX</li>
+                    <li><b>Programming Languages and Technologies:</b> C++, HTML, CSS, JavaScript, React, Flutter, Dart, Firebase, Oracle SQL, Pig Latin, Java, LaTeX</li>
                     <li><b>Development and Tools:</b> Visual Studio Code, VIM, Jupyter Notebook</li>
                     <li><b>Cloud, Big Data, and Version Control:</b> Google Cloud, Amazon Web Services, Git, Hadoop</li>
                 </ul>
@@ -37,12 +37,6 @@ export default function Resume() {
         <div id = "Projects">
             <h2 className = "Title">Projects | <a href="https://github.com/Slam210" target="_blank">Github</a></h2>
             <ul>
-                <li><b>The Odin Project</b></li>
-                <ul>
-                    <li>Master web development skills, specializing in HTML, CSS, JavaScript, Git, and database management.</li>
-                    <li>Cultivate robust problem-solving skills within computer science through self-paced learning</li>
-                    <li>Collaborate on projects to strengthen proficiency in web development</li>
-                </ul>
                 <li><b>ShapeShift</b></li>
                 <ul>
                     <li>Developed a fitness app using Flutter and Dart, with a custom-designed UI.</li>
@@ -50,11 +44,17 @@ export default function Resume() {
                     <li>Leveraged Flutter and Dart to craft a mobile fitness app, integrating various APIs for social media sharing, fitness
                         tracking, community building, and content sharing.</li>
                 </ul>
-                <li><b>Resume</b></li>
+                <li><b>Technical Projects Club Website</b></li>
                 <ul>
-                    <li>Created a dynamic resume website using HTML and CSS, skillfully blending technical proficiency with creative design.</li>
-                    <li>Meticulously structured content with HTML, ensuring logical presentation and easy navigation.</li>
-                    <li>Styled the website using CSS for a clean, modern aesthetic, incorporating responsive design principles for optimal viewing across devices. Integrated interactive elements for enhanced user engagement, resulting in a visually appealing and professional online presence.</li>
+                    <li>Implemented an overhaul of the Technical Projects Club (TPC) website, implementing React calendars and components to optimize content organization and elevate user engagement.</li>
+                    <li>Transformed the website's visual presentation on diverse platforms by refining HTML and CSS, ensuring a design that adapts seamlessly to both web and mobile interfaces, maintaining consistent ratios.</li>
+                    <li>Utilized a secure deployment strategy, achieving HTTPS encryption, fortifying data safety, and contributing to a robust online presence for the TPC community.</li>
+                </ul>
+                <li><b>Personal Website</b></li>
+                <ul>
+                    <li>Designed and implemented a dynamic personal website using HTML, CSS, and JavaScript, showcasing technical proficiency and creativity.</li>
+                    <li>Developed and integrated various sections, including an About Me page, Resume, Projects, and a homepage, providing a comprehensive overview of skills, achievements., and projects</li>
+                    <li>Utilized React for seamless navigation, optimizing user experience, and demonstrating proficiency in modern web development technologies.</li>
                 </ul>
             </ul>
         </div>
