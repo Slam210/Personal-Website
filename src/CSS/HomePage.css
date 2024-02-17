@@ -55,3 +55,15 @@
 .input:focus, .msg, .area:focus {
     border: 2px solid black;
 }
+
+.gridItem {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    opacity: 0; /* Start with opacity 0 */
+    transition: opacity 0.5s ease-in-out; /* Add a transition effect */
+}
+
+.animated {
+    opacity: 1; /* Set opacity to 1 for the animated class */
+}

@@ -1,40 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 import '../CSS/NavBar.css';
 
 export default function NavBar() {
-  const [isSticky, setIsSticky] = useState(false);
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [scrollTimer, setScrollTimer] = useState(null);
-  const path = window.location.pathname;
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollPos = window.scrollY;
-      const isScrollingUp = currentScrollPos < prevScrollPos;
-
-      setIsSticky(isScrollingUp && currentScrollPos > 0);
-      clearTimeout(scrollTimer);
-      setScrollTimer(
-        setTimeout(() => {
-          setIsSticky(false);
-        }, 500)
-      );
-
-      setPrevScrollPos(currentScrollPos);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      clearTimeout(scrollTimer);
-    };
-  }, [prevScrollPos, scrollTimer]);
-
   return (
-    <nav className={`navBar ${isSticky ? 'sticky' : ''}`}>
-      <Link to="/PersonalWebsite" className="HomePage"> Home Page</Link>
+    <nav className={`navBar`}>
+      <Link to="/HomePage" className="HomePage"> Home Page</Link>
       <ul>
         <CustomLink to="/AboutMe">About Me</CustomLink>
         <CustomLink to="/Projects">Projects</CustomLink>

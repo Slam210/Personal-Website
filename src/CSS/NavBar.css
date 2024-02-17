@@ -1,44 +1,38 @@
 .navBar {
-    background: #002244;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 2rem;
-    padding: 0 1rem;
-    transition: top 0.3s ease;
-  }
-  
-  .HomePage {
-    font-size: 2rem;
-  }
-  
-  .navBar ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .navBar a {
-    color: inherit;
-    text-decoration: none;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: .25rem;
-  }
-  
-  .navBar li.active {
-    background-color: #777;
-    transition: background-color 1s ease;
-  }
+  background: #002244;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 1.5rem 2rem;
+  transition: top 0.3s ease;
+  margin: 1%;
+  border-radius: 50px;
+}
 
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+.HomePage {
+  font-size: 2rem;
+}
+
+.navBar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navBar a {
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+}
+
+.navBar li.active {
+  background-color: #777;
+  transition: background-color 1s ease;
+}
