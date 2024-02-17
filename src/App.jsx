@@ -13,10 +13,11 @@ export default function App() {
         <div className = "container">
           <Routes>
             <Route path="/" element={<HomePage />}/>
-            <Route path="/HomePage" element={<HomePage />}/>
-            <Route path="/AboutMe" element={<AboutMe />}/>
-            <Route path="/Resume" element={<Resume />}/>
-            <Route path="/Projects" element={<Projects />}/>
+            <Route path="/PersonalWebsite/HomePage" element={<HomePage />}/>
+            <Route path="/PersonalWebsite" element={<HomePage />}/>
+            <Route path="/PersonalWebsite/AboutMe" element={<AboutMe />}/>
+            <Route path="/PersonalWebsite/Resume" element={<Resume />}/>
+            <Route path="/PersonalWebsite/Projects" element={<Projects />}/>
           </Routes>
         </div>
     </>

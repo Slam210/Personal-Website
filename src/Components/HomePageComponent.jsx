@@ -24,11 +24,11 @@ export default function TextSection() {
     function routeChange(fileName) {
         let path = fileName;
         console.log(path);
-        if (fileName === "/HomePage") {
+        if (fileName === "/PersonalWebsite/HomePage") {
             document.documentElement.scrollTop = 0;
             return;
         }
-        navigate(path);
+        navigate('/PersonalWebsite'+path);
     }
 
     return (

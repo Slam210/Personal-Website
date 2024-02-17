@@ -5,11 +5,11 @@ import '../CSS/NavBar.css';
 export default function NavBar() {
   return (
     <nav className={`navBar`}>
-      <Link to="/HomePage" className="HomePage"> Home Page</Link>
+      <Link to="PersonalWebsite/HomePage" className="HomePage"> Home Page</Link>
       <ul>
-        <CustomLink to="/AboutMe">About Me</CustomLink>
-        <CustomLink to="/Projects">Projects</CustomLink>
-        <CustomLink to="/Resume">Resume</CustomLink>
+        <CustomLink to="PersonalWebsite/AboutMe">About Me</CustomLink>
+        <CustomLink to="PersonalWebsite/Projects">Projects</CustomLink>
+        <CustomLink to="PersonalWebsite/Resume">Resume</CustomLink>
       </ul>
     </nav>
   );
