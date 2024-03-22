@@ -1,27 +1,27 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { ProjectsArray } from "../DataFiles/ProjectsData";
 import Modal from "react-modal";
-import '../CSS/Projects.css'
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
+import "../CSS/Projects.css";
 
 Modal.setAppElement("#root"); // Set the root element for accessibility
 
 export default function Projects() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
-    const [selectedImage, setSelectedImage] = useState(null);
-    const imgRef = useRef(null);
+    const [selectedImages, setSelectedImages] = useState([]);
+    const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
-    const openModal = (image) => {
-        setSelectedImage(image);
+    const openModal = (images, index) => {
+        setSelectedImages(images);
+        setSelectedImageIndex(index);
         setModalIsOpen(true);
     };
 
     const closeModal = () => {
-        setSelectedImage(null);
+        setSelectedImages([]);
+        setSelectedImageIndex(0);
         setModalIsOpen(false);
-    };
-
-    const calculateImageWidth = (imageCount) => {
-        return imageCount >= 5 ? "10%" : "20%";
     };
 
     return (
@@ -43,16 +43,14 @@ export default function Projects() {
                             </h1>
                             <p>{project.Description}</p>
                             <div className="image-gallery">
-                                {project.ImageLinks.map((imageLink, imgIndex) => (
-                                    <img
-                                        key={imgIndex}
-                                        src={imageLink}
-                                        alt={`Project ${imgIndex + 1}`}
-                                        onClick={() => openModal(imageLink)}
-                                        style={{ width: calculateImageWidth(project.ImageLinks.length), height: "200px" }}
-                                        ref={imgRef}
-                                    />
-                                ))}
+                                <ImageGallery
+                                    items={project.ImageLinks.map(imageLink => ({
+                                        original: imageLink,
+                                        thumbnail: imageLink
+                                    }))}
+                                    showThumbnails={true}
+                                    onClickThumbnail={(e, index) => openModal(project.ImageLinks, index)}
+                                />
                             </div>
                         </div>
                     ))}
@@ -64,11 +62,14 @@ export default function Projects() {
                 contentLabel="Image Modal"
             >
                 <button onClick={closeModal}>Close</button>
-                {selectedImage && (
-                    <img
-                        src={selectedImage}
-                        alt="Selected Project Image"
-                        style={{ width: "100%", height: "100%" }}
+                {selectedImages.length > 0 && (
+                    <ImageGallery
+                        items={selectedImages.map(imageLink => ({
+                            original: imageLink,
+                            thumbnail: imageLink
+                        }))}
+                        startIndex={selectedImageIndex}
+                        showIndex={true}
                     />
                 )}
             </Modal>
