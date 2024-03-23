@@ -3,24 +3,15 @@
 }
 
 .image-gallery {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+  max-width: 80%; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the gallery horizontally */
 }
 
-.ReactModal__Overlay {
-    z-index: 100; /* Adjust the z-index as needed */
-  }
-  
-  .ReactModal__Content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    max-width: 70%; /* Adjust the max-width as needed */
-    max-height: auto; /* Adjust the max-height as needed */
-    margin: auto;
-  }
+.image-gallery-slide img {
+  max-height: 400px; /* Adjust the maximum height of individual images */
+}
+
+.image-gallery-thumbnail img {
+  max-width: 100px; /* Adjust the maximum width of thumbnails */
+  max-height: 100px; /* Adjust the maximum height of thumbnails */
+}
