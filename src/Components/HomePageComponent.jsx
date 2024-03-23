@@ -12,11 +12,11 @@ export default function TextSection() {
                 if (prevIndex < HomePageSections.length - 1) {
                     return prevIndex + 1;
                 } else {
-                    clearInterval(interval); // Stop the interval when all elements are animated
+                    clearInterval(interval);
                     return prevIndex;
                 }
             });
-        }, 500); // Adjust the delay between animations (in milliseconds)
+        }, 500);
         
         return () => clearInterval(interval);
     }, []);
