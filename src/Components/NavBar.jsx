@@ -10,6 +10,7 @@ export default function NavBar() {
         <CustomLink to="PersonalWebsite/AboutMe">About Me</CustomLink>
         <CustomLink to="PersonalWebsite/Projects">Projects</CustomLink>
         <CustomLink to="PersonalWebsite/Resume">Resume</CustomLink>
+        <CustomLink to="PersonalWebsite/DevelopmentPage">Developments</CustomLink>
       </ul>
     </nav>
   );

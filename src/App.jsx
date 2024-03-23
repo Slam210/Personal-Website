@@ -4,6 +4,7 @@ import AboutMe from './Pages/AboutMe'
 import Resume from './Pages/Resume'
 import Projects from './Pages/Projects'
 import HomePage from './Pages/HomePage'
+import DevelopmentPage from './Pages/DevelopmentPage'
 import {Route, Routes} from "react-router-dom"
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
             <Route path="/PersonalWebsite/AboutMe" element={<AboutMe />}/>
             <Route path="/PersonalWebsite/Resume" element={<Resume />}/>
             <Route path="/PersonalWebsite/Projects" element={<Projects />}/>
+            <Route path="/PersonalWebsite/Development" element={<DevelopmentPage/>}/>
           </Routes>
         </div>
     </>
